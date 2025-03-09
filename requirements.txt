@@ -1,4 +1,6 @@
 fastapi
 uvicorn
-basic-pitch[onnx]
+basic-pitch[onnx]  # CoreMLではなくONNXを使用
 python-multipart
+tensorflow-cpu
+
