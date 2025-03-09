@@ -3,6 +3,7 @@ from basic_pitch.inference import predict_and_save
 from basic_pitch import ICASSP_2022_MODEL_PATH
 import shutil
 from fastapi.responses import FileResponse
+import uvicorn
 
 app = FastAPI()
 
