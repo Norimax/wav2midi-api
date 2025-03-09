@@ -25,3 +25,6 @@ async def convert_audio(file: UploadFile = File(...)):
 
     output_midi = input_audio.replace('.wav', '_basic_pitch.mid')
     return FileResponse(output_midi, media_type="audio/midi", filename="output.mid")
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
